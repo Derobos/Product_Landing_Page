@@ -1,26 +1,94 @@
 <!DOCTYPE html>
 
 <html>
+<style>
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: aqua;
+        }
+    }
+    
+    .info {
+        grid-auto-rows: minmax(10px, auto);
+    }
+    
+    .img {
+        display: inline;
+        padding-left: 10%;
+        padding-bottom: 10%;
+        max-width: 50%;
+    }
+    
+    #logo {
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    
+    .nav-link {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .flex-container {
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+    }
+</style>
 
-<head>
-
-    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</head>
-
-<body>
-    <h1>Starship Charter</h1>
 
 
+<header id="header">
+
+
+    <nav id="nav-bar" class="flex-container">
+        <a class="nav-link" href="#Intro">Introduction</a>
+        <a class="nav-link" href="#Experience">Experience</a>
+        <a class="nav-link" href="#Destinations">Destinations</a>
+    </nav>
+
+    <img class="img" src="https://m.media-amazon.com/images/I/31B7ZK8ZlGL._AC_UY218_.jpg" id="header-img">
+    <em id="logo">Presents</em>
+</header>
+
+<div id="Intro" class="flex-container">
+
+    <body>
+
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/22BXPLkyocw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
 
+
+        </a>
+</div>
+
+<div id="Experience" class="flex-container">
+    <div class="info">
+        <h3>Let us help you reach a new frontier with the introduction of our new chartered flights.</h3>
+
+        <p>Are you ready for a new adventure? Seeking a fresh venue to entertain guests and impress family or friends?<br> We will soon be offering a special opportunity for elite travellers, to climb aboard our starship and head for the skies!</p>
+    </div>
+
+
+</div>
+
+<div id="Destinations" class="flex-container">
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" placeholder="Your@email.com" name="email"></input>
+        <Input id="submit" type="submit"></Input>
+    </form>
+
+
+</div>
 
 
 
 </body>
 
-
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 
 
