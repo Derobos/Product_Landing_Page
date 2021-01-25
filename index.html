@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 
 <html>
-<style>
-    @media only screen and (max-width: 600px) {
-        body {
-            background-color: aqua;
+
+<head>
+    <link rel="stylesheet" href="plp.css">
+
+    <style>
+        @media only screen and (min-width: 600px) {
+            body {
+                background-color: darkgray;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 150px;
+            }
         }
-    }
-    
-    .info {
-        grid-auto-rows: minmax(10px, auto);
-    }
-    
-    .img {
-        display: inline;
-        padding-left: 10%;
-        padding-bottom: 10%;
-        max-width: 50%;
-    }
-    
-    #logo {
-        font-size: xx-large;
-        font-weight: bolder;
-    }
-    
-    .nav-link {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    
-    .flex-container {
-        display: flex;
-        padding-top: 10px;
-        justify-content: center;
-    }
-</style>
+        
+        body {
+            padding-top: 100px;
+        }
+    </style>
 
 
 
-<header id="header">
+
+</head>
 
 
-    <nav id="nav-bar" class="flex-container">
-        <a class="nav-link" href="#Intro">Introduction</a>
-        <a class="nav-link" href="#Experience">Experience</a>
-        <a class="nav-link" href="#Destinations">Destinations</a>
+
+<header id="header" class="header">
+
+    <img class="img" src="https://m.media-amazon.com/images/I/31B7ZK8ZlGL._AC_UY218_.jpg" id="header-img" heitght="30px" width="300px">
+    <em id="logo">Presents</em>
+
+    <nav id="nav-bar">
+        <a class="nav-link" href="#intro">Introduction</a>
+        <a class="nav-link" href="#exp">Experience</a>
+        <a class="nav-link" href="#dest">Destinations</a>
     </nav>
 
-    <img class="img" src="https://m.media-amazon.com/images/I/31B7ZK8ZlGL._AC_UY218_.jpg" id="header-img">
-    <em id="logo">Presents</em>
+
 </header>
 
-<div id="Intro" class="flex-container">
+<body class="flex-container">
+    <div id="intro" class="intro">
 
-    <body>
+        <h3>Let us help you reach a new frontier with the introduction of our new chartered flights.</h3>
 
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/22BXPLkyocw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
-
-
         </a>
-</div>
-
-<div id="Experience" class="flex-container">
-    <div class="info">
-        <h3>Let us help you reach a new frontier with the introduction of our new chartered flights.</h3>
-
-        <p>Are you ready for a new adventure? Seeking a fresh venue to entertain guests and impress family or friends?<br> We will soon be offering a special opportunity for elite travellers, to climb aboard our starship and head for the skies!</p>
     </div>
 
+    <div id="exp" class="flex-container">
 
-</div>
+        <p>Are you ready for a new adventure? Seeking a fresh venue to entertain guests and impress family or friends? We will soon be offering a special opportunity for elite travellers, to climb aboard our starship and head for the skies!</p>
+        <p>It's a small world after all. So it is only natural to strive for something more, something special, something beyond what anyone ever thought possible. With the advances in our technology, space travel is now safer than ever before.</p>
+        <img src="Images/SpaceTesla.jpeg"></img>
 
-<div id="Destinations" class="flex-container">
+        <p></p>
+    </div>
 
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" id="email" placeholder="Your@email.com" name="email"></input>
-        <Input id="submit" type="submit"></Input>
-    </form>
+    <div id="dest" class="flex-container">
 
 
-</div>
+        <p>Are you ready for a lunar vacation? Would you like to see the sunrise on Mars or drift through the clouds of Venus? Sign up now for this once in a lifetime opportunity. And remember Loraine... your density awaits you!</p>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" id="email" placeholder="Your@email.com" name="email"></input>
+            <Input id="submit" type="submit"></Input>
+        </form>
+
+        <footer class="disc">This offer is not available within the Milky Way galaxy or for use by any of it's inhabitants. All risk is assumed by purchaser for any loss of life limb or treasure. We hope you've enjoyed this presentation and look forward to using the email
+            address you have supplied us with to spam countless offers from orphaned billionaire recipients and long lost royalty of questionable reputation. All products used or referenced in this webpage have been taken without permission or at least
+            that was our intention. If you would like to donate to our legal defense fund, please send all you can to someone who is more deserving of your generosity than we are. Please be careful when surfing the web and thank you for your time.</footer>
+
+
+
+
+    </div>
 
 
 
